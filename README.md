@@ -1,7 +1,7 @@
-SearchWordPuzzle
+Word Search Puzzle solver
 ================
 
-Search Word Puzzle solver
+Word Search Puzzle solver
 
 A Web application created with:
 - HTML
