@@ -2,8 +2,9 @@
   <head>
     <title>Word Search Puzzle</title>
     <meta charset="UTF-8" />
-    <!-- Load JavaScript -->
+    <!-- Load JavaScript libraries -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/puzzle.js" type="text/javascript"></script>
   </head>
   <body>
     <!-- Input content -->
@@ -13,7 +14,7 @@
       <!-- the puzzle -->
       Puzzle: <textarea id="puzzleText"></textarea><br />
       <!-- Prepare the puzzle -->
-      <input type="button" name="toStep2" value="Continue" id="toStep2" />
+      <input type="button" name="toStep2" value="Continue" id="toStep2" onclick="javascript:puzzle.doCreatePuzzle();" />
     </div>
     
     <!-- Result content -->
@@ -21,13 +22,20 @@
       <!-- display the puzzle in the table -->
       <table id="puzzle"></table>
       <!-- buttons to go back to step 1 and find the solution -->
-      <input type="button" name="back" value="Go back to step 1" id="back" /><br />
-      <input type="button" name="check" value="Check words" id="check" /><br />
+      <input type="button" name="back" value="Go back to step 1" id="back" onclick="javascript:puzzle.goBack();" /><br />
+      <input type="button" name="check" value="Check words" id="check" onclick="javascript:puzzle.solveThePuzzle();" /><br />
       <!-- Satistics and the solution -->
       Found :<input type="text" name="wFound" value="0" id="wFound" /> / <span id="wTotal"></span><br />
       Not found: <div id="nFound"></div>
       Solution: <div id="pSolution"></div>
     </div>
-    <script src="js/puzzle.js" type="text/javascript"></script>
+    
+    <!-- JavaScript execute -->
+    <script type="text/javascript">
+      var puzzle;
+      $(document).ready(function() {
+        puzzle = new Puzzle();
+      });
+    </script>
   </body>
 </html>
