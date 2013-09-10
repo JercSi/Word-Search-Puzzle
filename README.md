@@ -10,11 +10,17 @@ A Web application created with:
 
 
 How to use this web application?
+================
 Into text area "Words list" (#words) write words that need to be found. Each word to be found must be in new line. Suggested that words are in upper case letters.
+
 Into text area "Puzzle" (#puzzleText) write the puzzle. Each line must start with ' and end with '.
 
-Example and guide will be available on http://www.jerc.si soon.
+Example and the guide
+================
+Example and the guide will be available on http://www.jerc.si soon.
 
+History
+================
 Version: 1.00 (2013-09-10)
 - JavaScript puzzle.js file with Puzzle class and it's prototype functions
 - creating the puzzle
