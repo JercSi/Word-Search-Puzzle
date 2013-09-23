@@ -17,7 +17,7 @@ Into text area "Puzzle" (#puzzleText) write the puzzle. Each line must start wit
 
 Example and the guide
 ================
-Example and the guide will be available on http://www.jerc.si soon.
+Example and the guide will is available on http://www.jerc.si/word-search-puzzle/.
 
 History
 ================
